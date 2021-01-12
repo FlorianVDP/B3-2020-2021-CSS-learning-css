@@ -9,6 +9,10 @@
     body{
         font-size: 1rem;
     }
+    .wrapper-section{
+        max-width: 1080px;
+        margin: 0 auto;
+    }
 }
 @media (max-width: var(--main-queries-tablet)) {
     body{
@@ -18,5 +22,9 @@
 @media (max-width: var(--main-queries-phone)) {
     body{
         font-size: 1.5rem;
+    }
+    .wrapper-section{
+        max-width: initial;
+        margin: 0 16px;
     }
 }

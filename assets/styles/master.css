@@ -2,9 +2,6 @@ section{
 
 }
 section .wrapper-section{
-    max-width: var(--main-max-width);
-    margin: 0 auto;
-    padding: 4em 6%;
 }
 
 .wrapper-title{

@@ -11,15 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e600e5-0d2c-4db0-b0db-de6a2a0d7698" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/styles/master.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/queries.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/styles/variables.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evolution.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/listing-personnalite.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mentions-legales.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/single-personnalite.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/master.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/queries.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/queries.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variables.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +68,7 @@
       <workItem from="1609836601832" duration="3528000" />
       <workItem from="1610007824282" duration="6000" />
       <workItem from="1610377366209" duration="3376000" />
+      <workItem from="1610439173398" duration="1436000" />
     </task>
     <servers />
   </component>
