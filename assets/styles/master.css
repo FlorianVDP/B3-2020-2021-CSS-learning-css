@@ -1,26 +1,63 @@
-section{
+header nav ul.menu-principal li.menu-principal-item a{}
 
+/*____________________________________ Header ____________________________________*/
+/*__________________ Menu principal */
+header{}
+header nav{}
+header nav ul.menu-principal{}
+header nav ul.menu-principal li.menu-principal-item{}
+header nav ul.menu-principal li.menu-principal-item a{}
+/*__________________ Sous-menu */
+li.item-sous-menu{}
+li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:target ul.sous-menu{}
+li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:focus-within ul.sous-menu{
+    display: block;
 }
-section .wrapper-section{
+li.item-sous-menu ul.sous-menu{
+    display: none;
 }
-
-.wrapper-title{
-    margin: 0 0 2em 0;
+li.item-sous-menu ul.sous-menu li.sous-menu-item{}
+li.item-sous-menu ul.sous-menu li.sous-menu-item a{}
+/* Menu burger */
+@media screen and (min-width: 900px){
+    .wrapper-menu-burger{
+        display: none;
+    }
+    header nav ul.menu-principal{
+        display: none;
+    }
 }
-.wrapper-title h1{
-    font-size: 3rem;
-    font-weight: bolder;
-    text-transform: uppercase;
+header nav .menu-burger:checked ~ .menu-principal{
+    display: initial;
 }
-.wrapper-title p{
-    margin: 1em 0;
+header nav .menu-burger{
+    opacity: 0;
+    position: absolute;
+    top: -99999px;
 }
-.wrapper-content h2{
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 2em 0 .5em 0;
+header nav label{
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
 }
-.wrapper-content p{
-    columns: 300px;
-    line-height: 1.5em;
+header nav label span{
+    display: block;
+    width: 100%;
+    height: 6px /*A changer .menu-burger span:nth-of-type(2)*/;
+    background-color: var(--noir, black);
+    position: absolute;
+    border-radius: 100px;
 }
+header nav label span:nth-of-type(1){
+    top: 0;
+}
+header nav label span:nth-of-type(2){
+    top: calc(50% - 6px / 2);
+    width: 80%;
+}
+header nav label span:nth-of-type(3){
+    bottom: 0;
+}
+/*____________________________________ Main ____________________________________*/

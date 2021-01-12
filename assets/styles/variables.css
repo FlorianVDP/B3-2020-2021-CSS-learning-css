@@ -1,6 +1,6 @@
 :root {
     /*---- Colors ----*/
-    --main-color: #7448FF;
+    --main-color: #b71540;
     --second-color: #0a3d62;
     --blanc: #E8E8E9;
     --noir: #1C1C22;
@@ -12,10 +12,3 @@
     --trans-300: all ease-in-out 300ms;
     --trans-500: all ease-in-out 500ms;
 }
-
-/*
-EXEMPLE
-div{
-    color: var(--main-color, red);
-}
-*/

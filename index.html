@@ -20,164 +20,42 @@
 <head>
     <meta charset="UTF-8">
     <title>B3-2020-2021</title>
-    <meta name="viewport">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./assets/styles/reset.css">
+    <link rel="stylesheet" href="./assets/fonts/stylesheet.css">
     <link rel="stylesheet" href="./assets/styles/queries.css">
     <link rel="stylesheet" href="./assets/styles/variables.css">
     <link rel="stylesheet" href="./assets/styles/master.css">
 </head>
 <body>
-<main>
-    <section>
-        <div class="wrapper-section">
-            <div class="wrapper-title">
-                <h1>B3-2020-2021-CSS-learning-css</h1>
-                <p class="intro">
-                    Aujourd’hui je vous propose une traduction de l’article A simple guide to responsive typography de Cameron Chapman traitant d’un aspect peu abordé dans les techniques de responsive design.
-
-                    La plus grande partie des articles qui traitent du « responsive design » mettent l’accent sur 2 aspects : une grille fluide et flexible, des images fluides et flexibles. La plupart d’entre eux ne parlent pas de la typographie.
-
-                    Et pourtant pour la majorité des sites Internet, le contenu est l’élément le plus important.
-
-                    Certes, pour les sites où le contenu principal est composé d’images ou de vidéos, cet aspect devient un peu moins important, mais il ne devrait quand même pas être négligé.
-
-                    La bonne nouvelle est que le responsive design au niveau typographique n’est pas particulièrement difficile à mettre en place. Il faut juste prendre le temps de réfléchir à la façon dont notre typographie doit réagir aux changements de taille d’écran.
-                </p>
+    <header>
+        <nav>
+            <div class="wrapper-menu-burger">
+                <label for="menu-burger" class="menu-burger-label">
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                </label>
             </div>
-            <div class="wrapper-content">
-                <h2>Principe de la typographie responsive</h2>
-                <p>
-                    Il existe deux façons principales de mettre en place une typographie responsive. La première est le redimensionnement de la police. Cela signifie que la typographie est redimensionnée en fonction de la taille de l’écran mais qu’elle peut également être redimensionnée par l’utilisateur.
-
-                    La deuxième est d’optimiser la longueur des lignes pour maintenir la lisibilité. Cela signifie que pour certains écrans il est plus logique de réduire la zone de contenu et donc la longueur des lignes même si le contenu peut être plus large.
-                </p>
-                <h2>Redimensionner la typographie en utilisant les unités rems</h2>
-                <p>
-                    La plupart des concepteurs utilisent soit les pixel (px) soit les ems comme unités pour le dimensionnement de leur typographie. Utiliser les ems est une meilleures option que les pixels, car ils permettent aux utilisateurs de redimensionner la typographie dans leur navigateur. Mais la taille en em est relative à la taille de police des éléments parents et est plus compliquée à utiliser que la taille en pixel et plus compliquée encore dans la mise en place d’un responsive design.
-
-                    L’unité rem est la meilleure alternative à em. Son fonctionnement est presque identique à une différence près essentielle : les unités rems sont relatives à l’élément et non aux éléments parents. Cela permet de grandement faciliter la maintenance.
-
-                    Les unités rems sont maintenant supportées par la plupart des navigateurs modernes comme Firefox depuis la version 3.6, Opera depuis la version 11.6, Internet Explorer depuis la version 9… Vous pouvez mettre en place des solutions de repli pour les anciens navigateurs mais les rems sont assez bien supportés pour les utiliser maintenant.
-
-                    Maintenant que vous allez utiliser les rems pour dimensionner votre typographie, assurez vous de faire un reset sur l’élément html et non sur l’élément body. Cela devrait ressembler à :
-
-                    <br><code>
-                        html {
-                        font-size:100%;
-                        }
-                    </code><br>
-
-                    Maintenant votre unité rem sera fonction de la taille de police par défaut du périphérique.
-
-                    Ensuite vous aurez besoin de spécifier la taille de police pour chaque taille d’écran. Je recommande d’expérimenter les mêmes tailles de polices sur des appareils différents pour voir ce qui semble le mieux. Cela dépend des polices de caractères que vous avez choisies ainsi que de votre conception globale.
-
-                    Vous aurez probablement envie de spécifier de multiples tailles de police basées sur différentes tailles d’écran, ce qui est assez simple à faire. Par exemple, votre CSS pourrait ressembler à ceci:
-                    <br><code>
-                        @media (max-width: 640px) {
-                        body {
-                        font-size:1.2rem;
-                        }
-                        }
-                        @media (min-width: 640px) {
-                        body {
-                        font-size:1rem;
-                        }
-                        }
-                        @media (min-width:960px) {
-                        body {
-                        font-size:1.2rem;
-                        }
-                        }
-                        @media (min-width:1100px) {
-                        body {
-                        font-size:1.5rem;
-                        }
-                        }
-                    </code><br>
-                    Certes, il s’agit d’un code simplifié pour cet article, mais cela vous donne un point de départ. Vous remarquerez peut-être que pour les plus petits écrans, nous spécifions une taille de police légèrement plus grande. En effet une taille de polices plus grande est généralement plus facile à lire sur les petits écrans.
-
-                    Bien sûr, vous aurez envie d’ajouter des spécifications supplémentaires par exemple pour vos éléments h1 et autres. Je recommande fortement d’utiliser un outil comme Web Font Specimen pour voir de quoi a l’air votre typographie.
-                </p>
-                <h2>Le maintien d’une longueur de ligne optimale</h2>
-                <p>
-                    Alors que l’adaptation de la typographie est un concept assez simple, le maintient d’une longueur de ligne appropriée sur plusieurs périphériques est plus délicat.
-
-                    Il y a un débat sur la longueur de ligne optimale pour une bonne lisibilité, mais selon l’institut Baymard, le consensus semble se situer entre 50 et 75 caractères par ligne.
-
-                    Il recommande également d’utiliser un conteneur à largeur fixe pour votre contenu, mais cela contrecarre l’effet d’une conception souple, il nous faut donc aborder les choses un peu différemment si nous voulons maintenir la réactivité avec des longueurs de lignes optimisées.
-
-                    D’abord, déterminez les différentes tailles d’écrans pour lesquelles vous devez concevoir votre design et trouvez la taille de police que vous devez utiliser pour obtenir environ 50 caractères sur une ligne. Pour les écrans de très petite taille, vous devrez peut-être descendre en dessous de 50 caractères par ligne, pour maintenir une taille de police lisible, mais 50 caractères par ligne devrait être l’objectif. Cela nous donne un bon point de départ.
-
-                    Nous devons également définir la largeur maximum (ou points de rupture) pour les zones de contenu de texte. Regardez la taille de police que vous utilisez pour une taille d’écran donnée, puis déterminez la largeur du conteneur pour avoir environ 75 caractères par ligne. Ça ne sera exactement ça que si vous utilisez une police à espacement fixe, mais vous devriez être en mesure d’arriver à une moyenne assez facilement. Que devient notre largeur maximale du conteneur ?
-
-                    Disons que la taille de police par défaut pour un périphérique donné est de 16px, et que vous voulez que votre police soit de 20px (disons que nous utilisons une police serif comme par exemple Serif Droid). Cela signifie que vous devez spécifier une taille de police de 1.25rem. Pour cette taille, vous souhaitez un conteneur large d’environ 675px. Ce qui nous donne une moyenne de 60 caractères par ligne, qui est bien entre 50 et 75 caractères par ligne.
-
-                    Pour spécifier la largeur du conteneur, il suffit d’utiliser le code suivant :
-
-                    <br><code>
-                        @media (min-width: 950px) {
-                        .container {
-                        width:675px;
-                        }
-                        }
-                    </code><br>
-
-                    Vous pouvez définir ces largeurs de lignes maximum pour chaque tailles d’écrans, ou juste pour une taille spécifique. Avec des écrans plus petits, vous pouvez garder une largeur de conteneur automatique et laisser le contenu se répartir sur toute la largeur de l’écran.
-
-                    Avec des écrans beaucoup plus grands, vous pouvez diviser votre contenu en plusieurs colonnes. Disons, par exemple, que vous travaillez avec un iPad en mode paysage. Votre largeur d’écran est de 2048 pixels. Étirer vos lignes pour remplir tout l’écran rendra la lecture difficile, mais centrer votre contenu et garder vos longueurs de lignes plus courtes irait à l’encontre de l’objectif de visualiser le contenu en mode paysage.
-
-                    Vous pouvez donc diviser votre contenu en deux colonnes (voir trois, en fonction de la taille de votre police). Avec la spécification multi-colonne de CSS3, il est très facile de diviser votre texte en plusieurs colonnes sans avoir à modifier votre mise en page. Combinez cela avec les directives @media et vous aurez un contenu qui se divise en deux ou trois colonnes pour les plus grands écrans, afin de maintenir à la fois une taille de caractère et une longueur de ligne facile à lire.
-
-                    Encore une fois, le code pour faire cela est assez simple :
-                    <br><code>
-                        @media (min-width:1140px) {
-                        .content {
-                        -webkit-column-count: 2;
-                        -webkit-column-gap: 1em;
-                        -moz-column-count: 2;
-                        -moz-column-gap: 1em;
-                        column-count: 2;
-                        column-gap: 1em;
-                        }
-                        }
-                    </code><br>
-
-                    Maintenant sur les écrans de plus de 1440px, votre contenu sera divisé en deux colonnes et la longueur de ligne sera optimale.
-                </p>
-                <h2>Utilisez des polices alternatives</h2>
-                <p>
-                    Une chose qui est souvent négligée quand on parle de « responsive typography », c’est l’idée que différents types de caractères peuvent ne pas fonctionner correctement à des tailles différentes. Cela est particulièrement vrai pour les polices d’affichages.
-
-                    Est-ce que cela veut dire que vous devriez éviter d’utiliser ces polices dans vos créations responsive ? Bien sûr que non. Au lieu de cela, il suffit de spécifier des polices différentes pour différents éléments dans vos mises en page.
-
-                    Par exemple, avec un design pour les ordinateurs de bureau, vous pouvez utiliser une police comme Ligue Script pour vos en-têtes. Mais sur un écran plus petit, comme un iPhone, vous aurez besoin de la rendre si grande que l’entête dominerait le contenu, ou qu’il serait très difficile à lire.
-
-                    Ce que nous pouvons faire ici, c’est utiliser Ligue Script pour les écrans plus grands (iPad, bureau, etc), et utiliser une police plus grande pour les écrans plus petits (comme l’iPhone ou autres smartphones).
-
-                    Pour faire cela, vous pourriez faire ceci :
-                    <br><code>
-                        @media (min-width:960px) {
-                        h1 {
-                        font-family:"League Script", script;
-                        }
-                        }
-                        @media (max-width:960px) {
-                        h1 {
-                        font-family:"Droid Serif", serif;
-                        }
-                        }
-                    </code><br>
-                    Évidemment cela peut s’appliquer à plus de choses que simplement l’entête.
-                </p>
-                <h2>Conclusion</h2>
-                <p>
-                    Bien que le responsive design soit surtout porté sur les images et la mise en page, la gestion de la typographie est toute aussi importante. La bonne nouvelle c’est qu’il n’est pas particulièrement difficile d’adapter et d’optimiser votre typographie.
-
-                    Il est essentiel d’y mettre autant d’efforts que pour les autres éléments de votre conception. Maintenir la lisibilité de votre contenu est un élément essentiel à la création d’une expérience utilisateur optimale.
-                </p>
-            </div>
-        </div>
-    </section>
-</main>
+            <input type="checkbox" class="menu-burger" id="menu-burger">
+            <ul class="menu-principal">
+                <li class="menu-principal-item"> <a href="evolution.html">CSS evolution et propriété</a></li>
+                <li class="item-sous-menu"><a href="Personnalités.html">Personnalités</a>
+                    <ul class="sous-menu">
+                        <li class="sous-menu-item"><a href="#" >Jen Simmons</a></li>
+                        <li class="sous-menu-item"><a href="#">Rachel Andrew</a></li>
+                        <li class="sous-menu-item"><a href="#">Lea Verou</a></li>
+                        <li class="sous-menu-item"><a href="#">Val Head</a></li>
+                        <li class="sous-menu-item"><a href="#">Sara Soueidan</a></li>
+                        <li class="sous-menu-item"><a href="#">Ana Tudor</a></li>
+                        <li class="sous-menu-item"><a href="#">Alla Kholmatova</a></li>
+                        <li class="sous-menu-item"><a href="#">Chris Coyier</a></li>
+                        <li class="sous-menu-item"><a href="#">Sarah Drasner</a></li>
+                    </ul>
+                </li>
+                <li class="menu-principal-item"><a href="mentions-legales.html">Mentions légales</a></li>
+            </ul>
+        </nav>
+</header>
 </body>
 </html>
