@@ -1,0 +1,29 @@
+section{
+
+}
+section .wrapper-section{
+    max-width: var(--main-max-width);
+    margin: 0 auto;
+    padding: 4em 6%;
+}
+
+.wrapper-title{
+    margin: 0 0 2em 0;
+}
+.wrapper-title h1{
+    font-size: 3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.wrapper-title p{
+    margin: 1em 0;
+}
+.wrapper-content h2{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2em 0 .5em 0;
+}
+.wrapper-content p{
+    columns: 300px;
+    line-height: 1.5em;
+}

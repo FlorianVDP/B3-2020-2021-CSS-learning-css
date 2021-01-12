@@ -1,0 +1,22 @@
+:root {
+    --main-queries-desktop: 700px;
+    --main-queries-phone: 700px;
+    --main-queries-tablet: 900px;
+    --main-queries-watch: 42mm;
+}
+/* Typographie responsive */
+@media (min-width: var(--main-queries-desktop)) {
+    body{
+        font-size: 1rem;
+    }
+}
+@media (max-width: var(--main-queries-tablet)) {
+    body{
+        font-size: 1.2rem;
+    }
+}
+@media (max-width: var(--main-queries-phone)) {
+    body{
+        font-size: 1.5rem;
+    }
+}

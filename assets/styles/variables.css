@@ -1,0 +1,15 @@
+:root {
+    --main-color: #7448FF;
+    --second-color: #0a3d62;
+    --blanc: #E8E8E9;
+    --noir: #1C1C22;
+
+    --main-max-width: 1080px;
+}
+
+/*
+EXEMPLE
+div{
+    color: var(--main-color, red);
+}
+*/
