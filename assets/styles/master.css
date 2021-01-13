@@ -4,7 +4,13 @@ header nav ul.menu-principal li.menu-principal-item a{}
 /*__________________ Menu principal */
 header{}
 header nav{}
-header nav ul.menu-principal{}
+@media screen and (max-width: 900px){
+    header nav ul.menu-principal{
+        display: none;
+    }
+}
+header nav ul.menu-principal{
+}
 header nav ul.menu-principal li.menu-principal-item{}
 header nav ul.menu-principal li.menu-principal-item a{}
 /*__________________ Sous-menu */
@@ -21,9 +27,6 @@ li.item-sous-menu ul.sous-menu li.sous-menu-item a{}
 /* Menu burger */
 @media screen and (min-width: 900px){
     .wrapper-menu-burger{
-        display: none;
-    }
-    header nav ul.menu-principal{
         display: none;
     }
 }
