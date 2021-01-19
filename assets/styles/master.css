@@ -6,6 +6,24 @@ body{
 .page{
     margin: 0 16px;
 }
+.link-hover{
+    position: relative;
+}
+.link-hover:after, .link-hover:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: -1px;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 1px;
+    background-color: var(--blanc, white);
+    border-radius: 100px;
+}
+.link-hover:after:hover, .link-hover:after:focus{
+    width: 100%;
+}
 /*____________________________________ Main ____________________________________*/
 main{
     margin: 2em 0;

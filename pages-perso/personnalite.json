@@ -1,0 +1,41 @@
+{
+  "personnalite" : [
+    {
+      "nom" : "Simmons",
+      "prenom": "Jen"
+    },
+    {
+      "nom" : "Andrew",
+      "prenom": "Rachel"
+    },
+    {
+      "nom" : "Verou",
+      "prenom": "Léa"
+    },
+    {
+      "nom" : "Head",
+      "prenom": "Val"
+    },
+    {
+      "nom" : "Soueidan",
+      "prenom": "Sara"
+    },
+    {
+      "nom" : "Tudor",
+      "prenom": "Ana"
+    },
+    {
+      "nom" : "Kholmatova",
+      "prenom": "Alla"
+    },
+    {
+      "nom" : "Coyier",
+      "prenom": "Chris"
+    },
+    {
+      "nom" : "Drasner",
+      "prenom": "Sarah"
+    }
+
+  ]
+}

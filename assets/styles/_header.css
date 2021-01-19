@@ -19,7 +19,10 @@ header .wrapper-header{
 }
 header .wrapper-header .wrapper-logo{
 }
-header .wrapper-header .wrapper-logo img{}
+header .wrapper-header .wrapper-logo img{
+    width: 100px;
+    height: auto;
+}
 header .wrapper-header nav{
     flex-basis: 60%;
 }
@@ -71,6 +74,10 @@ header nav ul.menu-principal li.menu-principal-item a{
     text-align: center;
     padding: 0 2em;
     font-weight: bold;
+
+}
+header nav ul.menu-principal li.menu-principal-item a:last-of-type{
+    padding-right: 0;
 
 }
 header nav ul.menu-principal li.menu-principal-item a:hover, header nav ul.menu-principal li.menu-principal-item a:focus-within{
@@ -209,9 +216,10 @@ header nav label.menu-burger-label span{
     display: block;
     width: 100%;
     height: 6px /*A changer .menu-burger-checkbox span:nth-of-type(2)*/;
-    background-color: var(--noir, black);
+    background-color: var(--main-color, black);
     position: absolute;
     border-radius: 100px;
+    border: 1px solid var(--blanc);
 }
 header nav label.menu-burger-label span:nth-of-type(1){
     top: 0;
