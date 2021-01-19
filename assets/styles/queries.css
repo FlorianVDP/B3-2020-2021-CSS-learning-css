@@ -1,6 +1,5 @@
 :root {
-    --main-queries-desktop: 700px;
-    --main-queries-phone: 700px;
-    --main-queries-tablet: 900px;
+    --main-queries-tablet: 1023px;
+    --main-queries-phone: 767px;
     --main-queries-watch: 42mm;
 }

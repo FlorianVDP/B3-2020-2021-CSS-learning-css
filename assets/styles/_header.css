@@ -1,0 +1,226 @@
+/*____________________________________ Header ____________________________________*/
+/*__________________ Menu principal */
+header{
+    -webkit-box-shadow: 0px 1px 8px -4px rgba(28,28,34,0.75);
+    -moz-box-shadow: 0px 1px 8px -4px rgba(28,28,34,0.75);
+    box-shadow: 0px 1px 8px -4px rgba(28,28,34,0.75);
+
+}
+@media screen and (max-width: 767px){
+    header .wrapper-header{
+        padding: 2em 0;
+        margin: 0 16px;
+    }
+}
+header .wrapper-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .wrapper-header .wrapper-logo{
+}
+header .wrapper-header .wrapper-logo img{}
+header .wrapper-header nav{
+    flex-basis: 60%;
+}
+
+header nav ul.menu-principal{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 97px;
+}
+@media screen and (max-width: 900px){
+    header nav ul.menu-principal{
+        background-color: var(--main-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: calc(100vh - 10em);
+        z-index: 1;
+        padding: 10em 0 0 0;
+        width: 0%;
+        transition: var(--trans-300);
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        overflow: hidden;
+        -webkit-box-shadow: 0px -1px 8px -4px rgba(28,28,34,0.75);
+        -moz-box-shadow: 0px -1px 8px -4px rgba(28,28,34,0.75);
+        box-shadow: 0px -1px 8px -4px rgba(28,28,34,0.75);
+    }
+}
+header nav ul.menu-principal li.menu-principal-item{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+@media screen and (max-width: 900px){
+    header nav ul.menu-principal li.menu-principal-item{
+        height: initial;
+        width: 100%;
+    }
+}
+header nav ul.menu-principal li.menu-principal-item a{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--noir);
+    text-align: center;
+    padding: 0 2em;
+    font-weight: bold;
+
+}
+header nav ul.menu-principal li.menu-principal-item a:hover, header nav ul.menu-principal li.menu-principal-item a:focus-within{
+    transition: all ease-in-out 150ms;
+    color: var(--main-color);
+}
+@media screen and (max-width: 900px){
+    header nav ul.menu-principal li.menu-principal-item a{
+        width: 100%;
+        text-align: left;
+        padding: 1em 0;
+        height: auto;
+        color: var(--blanc);
+    }
+    header nav ul.menu-principal li.menu-principal-item a:hover, header nav ul.menu-principal li.menu-principal-item a:focus-within{
+        transition: all ease-in-out 150ms;
+        background-color: transparent;
+        color: var(--gris2);
+    }
+}
+/*__________________ Sous-menu */
+li.item-sous-menu{
+    position: relative;
+    flex-direction: column;
+}
+li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:target ul.sous-menu{}
+li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:focus-within ul.sous-menu{
+    transition: all ease-in-out 300ms;
+    width: 200px;
+    border-left: 10px solid var(--main-color);
+}
+@media screen and (max-width: 900px){
+    li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:target ul.sous-menu{}
+    li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:focus-within ul.sous-menu{
+        transition: all ease-in-out 300ms;
+        width: 200px;
+        border-left: 0px solid var(--main-color);
+
+    }
+}
+li.item-sous-menu ul.sous-menu{
+    border-radius: 10px;
+    display: block;
+    overflow: hidden;
+    width: 0px;
+    border-left: 0px solid var(--main-color);
+    background-color: var(--blanc);
+    -webkit-box-shadow: 0px 1px 8px -4px rgba(28,28,34,0.75);
+    -moz-box-shadow: 0px 1px 8px -4px rgba(28,28,34,0.75);
+    box-shadow: 0px 1px 8px -4px rgba(28,28,34,0.75);
+    position: absolute;
+    bottom: 0;
+    left: .5em;
+    transform: translateY(90%);
+}
+@media screen and (max-width: 900px){
+    li.item-sous-menu ul.sous-menu{
+        border-radius: 0px;
+        display: initial;
+        width: 200px;
+        border-left: 0px solid var(--main-color);
+        background-color: transparent;
+        -webkit-box-shadow: none;
+        -moz-box-shadow:none;
+        box-shadow:none;
+        position: initial;
+        bottom: initial;
+        left: initial;
+        transform: none;
+    }
+}
+
+li.item-sous-menu ul.sous-menu li.sous-menu-item{
+    width: 200px;
+}
+li.item-sous-menu ul.sous-menu li.sous-menu-item a{
+    padding: .5em 1em;
+    display: block;
+    width: 100%;
+    text-align: left;
+    text-transform: initial;
+    font-weight: normal;
+}
+@media screen and (max-width: 900px){
+    li.item-sous-menu ul.sous-menu li.sous-menu-item a{
+        padding: .5em 0;
+        color: var(--blanc);
+    }
+}
+li.item-sous-menu ul.sous-menu li.sous-menu-item a:hover,li.item-sous-menu ul.sous-menu li.sous-menu-item a:focus{
+    transition: all ease-in-out 150ms;
+    background-color: var(--gris1);
+}
+@media screen and (max-width: 900px){
+    li.item-sous-menu ul.sous-menu li.sous-menu-item a:hover,li.item-sous-menu ul.sous-menu li.sous-menu-item a:focus{
+        transition: all ease-in-out 150ms;
+        background-color: transparent;
+        color: var(--gris2);
+    }
+}
+/* Menu burger */
+header nav .menu-burger-checkbox:checked ~ .menu-principal{
+    width: 50%;
+    transition: var(--trans-300);
+    padding: 10em 2em 0 2em;
+}
+header nav .menu-burger-checkbox{
+    /*Cache-cache CSS*/
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+    -webkit-clip-path: inset(50%) !important;
+    clip-path: inset(50%) !important;
+    height: 1px !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: absolute !important;
+    width: 1px !important;
+    white-space: nowrap !important;
+}
+header nav label.menu-burger-label{
+    width: 40px;
+    height: 40px;
+    position: relative;
+    cursor: pointer;
+    float: right;
+    z-index: 100;
+    display: none;
+}
+@media screen and (max-width: 767px){
+    header nav label.menu-burger-label{
+        display: block;
+    }
+}
+header nav label.menu-burger-label span{
+    display: block;
+    width: 100%;
+    height: 6px /*A changer .menu-burger-checkbox span:nth-of-type(2)*/;
+    background-color: var(--noir, black);
+    position: absolute;
+    border-radius: 100px;
+}
+header nav label.menu-burger-label span:nth-of-type(1){
+    top: 0;
+}
+header nav label.menu-burger-label span:nth-of-type(2){
+    top: calc(50% - 6px / 2);
+    right: 0;
+    width: 80%;
+}
+header nav label.menu-burger-label span:nth-of-type(3){
+    bottom: 0;
+}

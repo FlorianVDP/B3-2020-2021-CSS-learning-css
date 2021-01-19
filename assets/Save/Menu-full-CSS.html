@@ -1,0 +1,98 @@
+<header>
+    <div class="wrapper-header">
+        <nav class="wrapper-menu-principal">
+            <div class="wrapper-menu-burger">
+                <label for="menu-burger" class="menu-burger-label">
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                    <span class="burger-span"></span>
+                </label>
+            </div>
+            <input type="checkbox" class="menu-burger" id="menu-burger">
+            <ul class="menu-principal">
+                <li class="menu-principal-item"> <a href="evolution.html" title="Page Evolution et propriétés du CSS">CSS evolution et propriétés</a></li>
+                <li class="item-sous-menu"><a href="Personnalités.html" title="Page de listing des personnalités">Personnalités</a>
+                    <ul class="sous-menu">
+                        <li class="sous-menu-item"><a href="#" title="Page sur Jen Simmons">Jen Simmons</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Rachel Andrew">Rachel Andrew</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Lea Verou">Lea Verou</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Val Head">Val Head</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Sara Soueidan">Sara Soueidan</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Ana Tudor">Ana Tudor</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Alla Kholmatova">Alla Kholmatova</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Chris Coyier">Chris Coyier</a></li>
+                        <li class="sous-menu-item"><a href="#" title="Page sur Sarah Drasner">Sarah Drasner</a></li>
+                    </ul>
+                </li>
+                <li class="menu-principal-item"><a href="mentions-legales.html" title="Page de mentions légales">Mentions légales</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<style>
+    /*____________________________________ Header ____________________________________*/
+    /*__________________ Menu principal */
+    header{}
+    header .wrapper-header{}
+    header nav{}
+    @media screen and (max-width: 900px){
+        header nav ul.menu-principal{
+            display: none;
+        }
+    }
+    header nav ul.menu-principal{
+    }
+    header nav ul.menu-principal li.menu-principal-item{}
+    header nav ul.menu-principal li.menu-principal-item a{}
+    /*__________________ Sous-menu */
+    li.item-sous-menu{}
+    li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:target ul.sous-menu{}
+    li.item-sous-menu:hover ul.sous-menu, li.item-sous-menu:focus-within ul.sous-menu{
+        display: block;
+    }
+    li.item-sous-menu ul.sous-menu{
+        display: none;
+    }
+    li.item-sous-menu ul.sous-menu li.sous-menu-item{}
+    li.item-sous-menu ul.sous-menu li.sous-menu-item a{}
+    /* Menu burger */
+    @media screen and (min-width: 900px){
+        .wrapper-menu-burger{
+            display: none;
+        }
+    }
+    header nav .menu-burger:checked ~ .menu-principal{
+        display: initial;
+    }
+    header nav .menu-burger{
+        opacity: 0;
+        position: absolute;
+        top: -99999px;
+    }
+    header nav label{
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: relative;
+        cursor: pointer;
+    }
+    header nav label span{
+        display: block;
+        width: 100%;
+        height: 6px /*A changer .menu-burger span:nth-of-type(2)*/;
+        background-color: var(--noir, black);
+        position: absolute;
+        border-radius: 100px;
+    }
+    header nav label span:nth-of-type(1){
+        top: 0;
+    }
+    header nav label span:nth-of-type(2){
+        top: calc(50% - 6px / 2);
+        width: 80%;
+    }
+    header nav label span:nth-of-type(3){
+        bottom: 0;
+    }
+    /*____________________________________ Main ____________________________________*/
+</style>

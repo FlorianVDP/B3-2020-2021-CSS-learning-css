@@ -2,8 +2,10 @@
     /*---- Colors ----*/
     --main-color: #b71540;
     --second-color: #0a3d62;
-    --blanc: #E8E8E9;
+    --blanc: #ffffff;
     --noir: #1C1C22;
+    --gris1: #e7e7e8;
+    --gris2: #555559;
 
     /*---- Width ----*/
     --main-max-width: 1080px;
