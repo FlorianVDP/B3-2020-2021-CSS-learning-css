@@ -2,7 +2,10 @@
 <project version="4">
   <component name="WebServers">
     <option name="servers">
-      <webServer id="b431e2a9-eb30-418d-a2b4-faf063fc5e48" name="mon serveur" url="http://ftp.cluster029.hosting.ovh.net">
+      <webServer id="e3155f30-1a00-44d3-869c-7a0dcc032871" name="Local ECV" url="http://10.18.72.61">
+        <fileTransfer mountedRoot="$PROJECT_DIR$" accessType="MOUNT" port="0" />
+      </webServer>
+      <webServer id="32d42463-2328-4c38-940e-728a2e2b7d33" name="Mon serveur" url="http://ftp.cluster029.hosting.ovh.net">
         <fileTransfer rootFolder="/www/learning-css" host="ftp.cluster029.hosting.ovh.net" port="21">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />

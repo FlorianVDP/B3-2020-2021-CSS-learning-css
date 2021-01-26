@@ -11,7 +11,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e600e5-0d2c-4db0-b0db-de6a2a0d7698" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/styles/evolution.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/deployment.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/webServers.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variables.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evolution.html" beforeDir="false" afterPath="$PROJECT_DIR$/evolution.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listing-personnalite.html" beforeDir="false" afterPath="$PROJECT_DIR$/listing-personnalite.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mentions-legales.html" beforeDir="false" afterPath="$PROJECT_DIR$/mentions-legales.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/single-personnalite.html" beforeDir="false" afterPath="$PROJECT_DIR$/single-personnalite.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,6 +56,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -54,6 +64,16 @@
       <recent name="$PROJECT_DIR$/assets" />
       <recent name="$PROJECT_DIR$/assets/fonts" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/B3-2020-2021-CSS-learning-css/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -73,7 +93,7 @@
       <workItem from="1610546801958" duration="9637000" />
       <workItem from="1611042906570" duration="6696000" />
       <workItem from="1611053087633" duration="3097000" />
-      <workItem from="1611648724072" duration="18000" />
+      <workItem from="1611648724072" duration="5585000" />
     </task>
     <servers />
   </component>
@@ -91,58 +111,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="320" y="112" key="#Deployment" timestamp="1611056244261">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="320" y="112" key="#Deployment/0.0.1440.900@0.0.1440.900" timestamp="1611056244261" />
-    <state x="352" y="126" key="#Options" timestamp="1611055953642">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="352" y="126" key="#Options/0.0.1440.900@0.0.1440.900" timestamp="1611055953642" />
-    <state x="509" y="232" key="#Web_Browsers" timestamp="1610453057285">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="509" y="232" key="#Web_Browsers/0.0.1440.900@0.0.1440.900" timestamp="1610453057285" />
-    <state x="412" y="251" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610378694868">
-      <screen x="0" y="25" width="1440" height="796" />
-    </state>
-    <state x="412" y="256" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1609839092166" />
-    <state x="412" y="251" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.796@0.25.1440.796" timestamp="1610378694868" />
-    <state x="784" y="439" key="Github.CreateGistDialog" timestamp="1607420584489">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="784" y="439" key="Github.CreateGistDialog/0.0.1920.1040/1920.-712.1080.1880@0.0.1920.1040" timestamp="1607420584489" />
-    <state x="540" y="377" key="NewPhpFileDialog" timestamp="1611055201657">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="540" y="377" key="NewPhpFileDialog/0.0.1440.900@0.0.1440.900" timestamp="1611055201657" />
-    <state width="254" height="200" key="ShowFilterAction_Filter_Popup" timestamp="1610449558661">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="254" height="200" key="ShowFilterAction_Filter_Popup/0.0.1440.900@0.0.1440.900" timestamp="1610449558661" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1609840063790">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state width="500" height="445" key="SwitcherDM/0.0.1440.900@0.0.1440.900" timestamp="1609840063790" />
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog" timestamp="1607420643331">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.DirectoryHistoryDialog/0.0.1920.1040/1920.-712.1080.1880@0.0.1920.1040" timestamp="1607420643331" />
-    <state x="421" y="184" width="597" height="548" key="find.popup" timestamp="1611056292833">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="421" y="184" width="597" height="548" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1611056292833" />
-    <state x="421" y="180" width="597" height="548" key="find.popup/0.25.1440.793@0.25.1440.793" timestamp="1610381391898" />
-    <state x="421" y="182" width="597" height="555" key="find.popup/0.25.1440.803@0.25.1440.803" timestamp="1610444842508" />
-    <state x="627" y="184" key="ftp.server.browser" timestamp="1611055941511">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="627" y="184" key="ftp.server.browser/0.0.1440.900@0.0.1440.900" timestamp="1611055941511" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1610449558921">
-      <screen x="0" y="0" width="1440" height="900" />
-    </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1610449558921" />
   </component>
 </project>

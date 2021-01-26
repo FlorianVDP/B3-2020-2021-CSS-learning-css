@@ -1,0 +1,112 @@
+.box-modèle{
+    width: 500px;
+    height: 200px;
+    position: relative;
+}
+.box-modèle .box-modele-item{
+    text-transform: uppercase;
+    color: var(--noir);
+    opacity: .5;
+    transition: var(--trans-300);
+}
+.box-modèle .margin{
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: #fdffdf;
+    border: 2px dashed var(--gris1);
+    transition: var(--trans-300);
+    display: flex;
+    justify-content: center;
+}
+.box-modèle .margin:hover{
+    background-color: #f8ff8f;
+    transition: var(--trans-300);
+}
+.box-modèle .margin:hover span{
+    transition: var(--trans-300);
+    opacity: 1;
+}
+.box-modèle .border{
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #737373;
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    transition: var(--trans-300);
+}
+.box-modèle .border:hover{
+    background-color: #333333;
+    transition: var(--trans-300);
+}
+.box-modèle .border-name{
+    z-index: 5;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #737373;
+    padding: 4px 8px;
+    color: var(--blanc);
+}
+.box-modèle .padding{
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #e3dcff;
+    width: calc(100% - 50px);
+    height: calc(100% - 50px);
+    transition: var(--trans-300);
+    display: flex;
+    justify-content: center;
+}
+.box-modèle .padding:hover span{
+    transition: var(--trans-300);
+    opacity: 1;
+}
+.box-modèle .padding span{
+    margin-left: 20px;
+}
+.box-modèle .padding:hover{
+    background-color: #baa8ff;
+    transition: var(--trans-300);
+}
+.box-modèle .content{
+    z-index: 4;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background-color: #cff0fb;
+    width: calc(100% - 300px);
+    height: calc(100% - 150px);
+    border: 2px dashed var(--bleu);
+    transition: var(--trans-300);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-modèle .content:hover span{
+    transition: var(--trans-300);
+    opacity: 1;
+}
+.box-modèle .content:hover{
+    background-color: #a1e7ff;
+    transition: var(--trans-300);
+}
