@@ -11,17 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="21e600e5-0d2c-4db0-b0db-de6a2a0d7698" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/images/image-box-modele.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/image-css-modele.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo-learning-css.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/images/logo-learning-css.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-perso/personnalite.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-perso/template-listing.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages-perso/template-single.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/_header.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/_header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/master.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/master.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/styles/variables.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/styles/variables.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,6 +43,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
@@ -83,6 +73,7 @@
       <workItem from="1610546801958" duration="9637000" />
       <workItem from="1611042906570" duration="6696000" />
       <workItem from="1611053087633" duration="3097000" />
+      <workItem from="1611648724072" duration="18000" />
     </task>
     <servers />
   </component>
