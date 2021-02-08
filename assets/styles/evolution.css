@@ -1,7 +1,12 @@
+.wrapper-section .container img{
+    width: 100%;
+    height: auto;
+}
 .box-modèle{
     width: 500px;
     height: 200px;
     position: relative;
+    margin: 4em;
 }
 .box-modèle .box-modele-item{
     text-transform: uppercase;
@@ -109,4 +114,114 @@
 .box-modèle .content:hover{
     background-color: #a1e7ff;
     transition: var(--trans-300);
+}
+@media screen and (max-width: 767px){
+    .box-modèle{
+        width: 100%;
+        margin: 2em 0;
+    }
+}
+.grid-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.one {
+    grid-column: 1 / 3;
+    grid-row: 1;
+    background-color: var(--main-color);
+    opacity: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blanc);
+}
+@media screen and (max-width: 767px){
+    .one {
+        grid-column: 1 / 4;
+        grid-row: 1;
+    }
+}
+.two {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+    background-color: var(--main-color);
+    opacity: 80%;
+    color: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .two {
+        grid-column: 1 / 4;
+        grid-row: 2;
+    }
+}
+.three {
+    grid-column: 1;
+    grid-row: 2 / 5;
+    background-color: var(--main-color);
+    opacity: 60%;
+    color: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .three {
+        grid-column: 1 / 4;
+        grid-row: 3;
+    }
+}
+.four {
+    grid-column: 3;
+    grid-row: 3;
+    background-color: var(--main-color);
+    opacity: 40%;
+    color: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .four {
+        grid-column: 1 / 4;
+        grid-row: 4;
+    }
+}
+.five {
+    grid-column: 2;
+    grid-row: 4;
+    background-color: var(--main-color);
+    opacity: 20%;
+    color: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .five {
+        grid-column: 1 / 4;
+        grid-row: 5;
+    }
+}
+.six {
+    grid-column: 3;
+    grid-row: 4;
+    background-color: var(--main-color);
+    opacity: 100%;
+    border: 4px solid var(--gris2);
+    color: var(--blanc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 767px){
+    .six {
+        grid-column: 1 / 4;
+        grid-row: 6;
+    }
 }

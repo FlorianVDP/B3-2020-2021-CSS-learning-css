@@ -28,7 +28,6 @@
     <link rel="stylesheet" href="./assets/styles/master.css">
     <link rel="stylesheet" href="./assets/styles/_header.css">
     <link rel="stylesheet" href="./assets/styles/_footer.css">
-    <link rel="stylesheet" href="./assets/styles/evolution.css">
 </head>
 <body>
 <header>
@@ -47,7 +46,7 @@
             <input type="checkbox" class="menu-burger-checkbox" id="menu-burger">
             <ul class="menu-principal">
                 <li class="menu-principal-item"> <a href="evolution.html" title="Page Evolution et propriétés du CSS" class="link-hover">CSS evolution et propriétés</a></li>
-                <li class="menu-principal-item item-sous-menu"><a href="listing-personnalite.html" title="Page de listing des personnalités" class="link-hover">Personnalités</a>
+                <li class="menu-principal-item item-sous-menu"><a href="./pages-perso/listing-personnalite.html" title="Page de listing des personnalités" class="link-hover">Personnalités</a>
                     <ul class="sous-menu">
                         <li class="sous-menu-item"><a href="#" title="Page sur Jen Simmons">Jen Simmons</a></li>
                         <li class="sous-menu-item"><a href="#" title="Page sur Rachel Andrew">Rachel Andrew</a></li>
@@ -67,12 +66,12 @@
 </header>
 <main>
     <section id="title">
-        <div class="wrapper-section">
+        <div class="wrapper-section page">
             <h1>CSS évolution et propriétés</h1>
         </div>
     </section>
     <section id="introduction">
-        <div class="wrapper-section">
+        <div class="wrapper-section page">
             <div class="heading-section">
                 <h2>Introduction</h2>
             </div>
@@ -122,6 +121,92 @@
                         En parallèle du CSS 2.1, le CSS 3 à était développé.
                     </p>
                 </div>
+            </div>
+        </div>
+    </section>
+    <section id="flex-box">
+        <div class="wrapper-section page">
+            <div class="heading-section">
+                <h2>Flex box</h2>
+            </div>
+            <p>
+                Le module des boîtes flexibles, aussi appelé « flexbox », a été conçu comme un modèle de disposition unidimensionnel et comme une méthode permettant de distribuer l'espace entre des objets d'une interface ainsi que de les aligner. Dans cet article, nous verrons les fonctionnalités principales des flexbox que nous approfondirons ensuite dans d'autres articles.
+            </p>
+            <p>
+                Lorsqu'on décrit les boîtes flexibles comme une méthode de disposition unidimensionnelle, on indique en fait que les flexbox gèrent une seule dimension à la fois : une ligne ou une colonne. Ce modèle est à comparer au modèle bidimensionnel de la disposition en grille (CSS Grid) qui contrôle à la fois les colonnes et les lignes.
+            </p>
+            <h3>
+                Les deux axes des boîtes flexibles
+            </h3>
+            <p>
+                Lorsqu'on travaille avec les boîtes flexibles, deux axes interviennent : l'axe principal (main axis en anglais) et l'axe secondaire (cross axis en anglais). L'axe principal est défini par la propriété flex-direction et l'axe secondaire est l'axe qui lui est perpendiculaire. Tout ce que nous manipulons avec les boîtes flexibles fera référence à ces axes.
+            </p>
+            <h4>
+                L'axe principal
+            </h4>
+            <p>
+                L'axe principal est défini par la propriété flex-direction qui peut prendre quatre valeurs :
+                <ul>
+            <li>row</li>
+            <li>row-reverse</li>
+            <li>column</li>
+            <li>column-reverse</li>
+        </ul>
+                Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).
+            </p>
+            <div class="image-container">
+                <img src="./assets/images/image-flex-box.png" alt="">
+            </div>
+            <p>
+                Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.
+            </p>
+            <div class="image-container">
+                <img src="./assets/images/image-flex-box-2.png" alt="">
+            </div>
+            <h4>
+                L'axe secondaire (cross axis)
+            </h4>
+            <p>
+                L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.
+            </p>
+                <div class="image-container">
+            <img src="./assets/images/image-flex-box-3.png" alt="">
+        </div>
+            <p>
+                Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales).
+            </p>
+            <div class="image-container">
+                <img src="./assets/images/image-flex-box-4.png" alt="">
+            </div>
+            <p>
+                Comprendre les liens entre les différents axes est crucial lorsqu'on commence à aligner/justifier des éléments flexibles sur un axe ou l'autre grâce aux fonctionnalités et propriétés des boîtes flexibles.
+            </p>
+        </div>
+    </section>
+    <section id="grid">
+        <div class="wrapper-section page">
+            <div class="heading-section">
+                <h2>Grid</h2>
+            </div>
+            <p>
+                Le module CSS Grid layout (modèle de disposition en grille) est un module de la spécification CSS qui permet de créer des mises en page en divisant l'espace d'affichage en régions utilisables par une application ou en définissant des relations de taille, position et d'empilement entre les éléments HTML.
+            </p>
+            <p>
+                Comme les tableaux, la grille permet d'aligner des éléments sous forme de colonnes et de lignes mais à la différence des tableaux, la grille n'a pas de structure de contenu. Ainsi, on peut créer de nombreuses mises en page qui n'auraient pas été possibles avec les tableaux. Ainsi, les éléments fils d'un conteneur en grille peuvent être positionnés afin qu'ils se chevauchent ou qu'ils se comportent comme des éléments positionnés.
+            </p>
+            <h3>
+                Un exemple simple
+            </h3>
+            <p>
+                Dans l'exemple qui suit, on montre comment utiliser une grille avec trois pistes en colonnes pour laquelle les nouvelles lignes créées mesureront au moins 100 pixels et auront au plus la taille automatique (définie par leur contenu). Les éléments sont placés sur la grille grâce aux numéros des lignes horizontales et verticales.
+            </p>
+            <div class="grid-container">
+                <div class="one">Un</div>
+                <div class="two">Deux</div>
+                <div class="three">Trois</div>
+                <div class="four">Quatre</div>
+                <div class="five">Cinq</div>
+                <div class="six">Six</div>
             </div>
         </div>
     </section>

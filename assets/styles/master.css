@@ -28,3 +28,95 @@ body{
 main{
     margin: 2em 0;
 }
+.wrapper-section h1{
+    font-size: 2em;
+    margin: 40px 0 40px 0;
+}
+.wrapper-section h2{
+    font-size: 1.5em;
+    margin: 30px 0 30px 0;
+}
+.wrapper-section h3{
+    font-size: 1.25em;
+    margin: 20px 0 20px 0;
+}
+.wrapper-section h4{
+    font-size: 1.10em;
+    margin: 10px 0 10px 0;
+}
+.wrapper-section ul{
+    padding-left: 2em;
+    margin: 5px 0;
+    list-style: circle;
+}
+.wrapper-section li{
+
+}
+.wrapper-section p{
+    margin-bottom: 10px;
+}
+.image-container{
+    max-width: 500px;
+}
+@media screen and (max-width: 767px){
+    .image-container{
+        width: 100%;
+    }
+}
+.image-container img{
+    width: 100%;
+    height: auto;
+}
+.listing{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    padding-left: 0 !important;
+}
+.listing li{
+    flex-basis: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--blanc);
+    box-shadow: var(--shadow);
+    padding: 1em;
+    margin: 2em 2em;
+    border-radius: 4px;
+    transition: var(--trans-300);
+
+}
+.listing li:hover{
+    transform: scale(1.1);
+    transition: var(--trans-300);
+}
+.listing li a{
+    background-color: var(--main-color);
+    color: var(--blanc);
+    padding: .5em 1em;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: var(--trans-300);
+    border: 1px solid ;
+    border: 1px solid var(--main-color);
+}
+.listing li a:hover,.listing li a:focus{
+    background-color: var(--blanc);
+    color: var(--main-color);
+    transition: var(--trans-300);
+}
+.listing li .wrapper-image{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.listing li .wrapper-image img{
+    width: 100%;
+    height: auto;
+}
