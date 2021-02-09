@@ -99,7 +99,6 @@ main{
     border-radius: 4px;
     text-decoration: none;
     transition: var(--trans-300);
-    border: 1px solid ;
     border: 1px solid var(--main-color);
 }
 .listing li a:hover,.listing li a:focus{
