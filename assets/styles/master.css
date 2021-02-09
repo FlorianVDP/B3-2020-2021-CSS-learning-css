@@ -52,6 +52,7 @@ main{
     background-color: var(--main-color);
     transition: var(--trans-300);
     animation: 30s ease-in-out 1s infinite alternate widthAugment;
+    z-index: 1;
 }
 @keyframes widthAugment {
     0%{
