@@ -7,6 +7,7 @@
     height: 200px;
     position: relative;
     margin: 4em;
+    z-index: 2;
 }
 .box-modèle .box-modele-item{
     text-transform: uppercase;
@@ -24,14 +25,16 @@
     margin: auto;
     width: 100%;
     height: 100%;
-    background-color: #fdffdf;
+    background-color: var(--main-color);
+    opacity:40%;
     border: 2px dashed var(--gris1);
     transition: var(--trans-300);
     display: flex;
     justify-content: center;
 }
 .box-modèle .margin:hover{
-    background-color: #f8ff8f;
+    background-color: var(--second-color);
+    opacity:50%;
     transition: var(--trans-300);
 }
 .box-modèle .margin:hover span{
@@ -46,13 +49,14 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    background-color: #737373;
-    width: calc(100% - 40px);
-    height: calc(100% - 40px);
+    background-color: transparent;
+    border: 5px solid var(--gris2);
+    width: calc(100% - 40px - 8px);
+    height: calc(100% - 40px - 8px);
     transition: var(--trans-300);
 }
 .box-modèle .border:hover{
-    background-color: #333333;
+    border: 5px solid var(--second-color);
     transition: var(--trans-300);
 }
 .box-modèle .border-name{
@@ -60,7 +64,7 @@
     position: absolute;
     top: 50px;
     left: 50px;
-    background-color: #737373;
+    background-color: var(--gris2);
     padding: 4px 8px;
     color: var(--blanc);
 }
@@ -72,7 +76,8 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    background-color: #e3dcff;
+    background-color: var(--main-color);
+    opacity: 70%;
     width: calc(100% - 50px);
     height: calc(100% - 50px);
     transition: var(--trans-300);
@@ -84,10 +89,10 @@
     opacity: 1;
 }
 .box-modèle .padding span{
-    margin-left: 20px;
 }
 .box-modèle .padding:hover{
-    background-color: #baa8ff;
+    background-color: var(--second-color);
+    opacity: 80%;
     transition: var(--trans-300);
 }
 .box-modèle .content{
@@ -98,10 +103,11 @@
     bottom: 0;
     left: 0;
     margin: auto;
-    background-color: #cff0fb;
+    background-color: var(--main-color);
+    opacity: 95%;
     width: calc(100% - 300px);
     height: calc(100% - 150px);
-    border: 2px dashed var(--bleu);
+    border: 2px dashed var(--gris2);
     transition: var(--trans-300);
     display: flex;
     align-items: center;
@@ -112,7 +118,8 @@
     opacity: 1;
 }
 .box-modèle .content:hover{
-    background-color: #a1e7ff;
+    background-color: var(--second-color);
+    opacity: 100%;
     transition: var(--trans-300);
 }
 @media screen and (max-width: 767px){
