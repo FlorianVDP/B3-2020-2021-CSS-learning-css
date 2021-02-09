@@ -207,7 +207,7 @@ header nav label.menu-burger-label{
     z-index: 100;
     display: none;
 }
-@media screen and (max-width: 767px){
+@media screen and (max-width: 900px){
     header nav label.menu-burger-label{
         display: block;
     }
