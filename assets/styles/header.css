@@ -18,6 +18,7 @@ header .wrapper-header{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin: 0 16px;
 }
 header .wrapper-header .wrapper-logo{
 }
@@ -135,6 +136,7 @@ li.item-sous-menu ul.sous-menu{
     bottom: 0;
     left: .5em;
     transform: translateY(90%);
+    z-index: 99;
 }
 @media screen and (max-width: 900px){
     li.item-sous-menu ul.sous-menu{

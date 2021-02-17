@@ -30,8 +30,8 @@
     <link rel="stylesheet" href="./assets/styles/variables.css">
     <link rel="stylesheet" href="./assets/styles/master.css">
     <link rel="stylesheet" href="./assets/styles/evolution.css">
-    <link rel="stylesheet" href="./assets/styles/header.css">
-    <link rel="stylesheet" href="./assets/styles/footer.css">
+    <link rel="stylesheet" href="assets/styles/header.css">
+    <link rel="stylesheet" href="assets/styles/footer.css">
 </head>
 <body>
 <header>
@@ -57,7 +57,7 @@
                     <ul class="sous-menu">
                         <li class="sous-menu-item"><a href="#" title="Page sur Jen Simmons">Jen Simmons</a></li>
                         <li class="sous-menu-item"><a href="#" title="Page sur Rachel Andrew">Rachel Andrew</a></li>
-                        <li class="sous-menu-item"><a href="#" title="Page sur Lea Verou">Lea Verou</a></li>
+                        <li class="sous-menu-item"><a href="single-personnalite.html" title="Page sur Lea Verou">Lea Verou</a></li>
                         <li class="sous-menu-item"><a href="#" title="Page sur Val Head">Val Head</a></li>
                         <li class="sous-menu-item"><a href="#" title="Page sur Sara Soueidan">Sara Soueidan</a></li>
                         <li class="sous-menu-item"><a href="#" title="Page sur Ana Tudor">Ana Tudor</a></li>
@@ -150,46 +150,52 @@
             <p>
                 Lorsqu'on travaille avec les boîtes flexibles, deux axes interviennent : l'axe principal (main axis en anglais) et l'axe secondaire (cross axis en anglais). L'axe principal est défini par la propriété flex-direction et l'axe secondaire est l'axe qui lui est perpendiculaire. Tout ce que nous manipulons avec les boîtes flexibles fera référence à ces axes.
             </p>
-            <h4>
-                L'axe principal
-            </h4>
-            <p>
-                L'axe principal est défini par la propriété flex-direction qui peut prendre quatre valeurs :
-                <ul>
-            <li>row</li>
-            <li>row-reverse</li>
-            <li>column</li>
-            <li>column-reverse</li>
-        </ul>
-                Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).
-            </p>
-            <div class="image-container">
-                <img src="./assets/images/image-flex-box.png" alt="">
+            <div class="flex-axes">
+                <div class="flex-axe-1">
+                    <h4>
+                        L'axe principal
+                    </h4>
+                    <p>
+                        L'axe principal est défini par la propriété flex-direction qui peut prendre quatre valeurs :
+                    <ul>
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                    </ul>
+                    Si on choisit la valeur row ou row-reverse, l'axe principal sera aligné avec la direction « en ligne » (inline direction) (c'est la direction logique qui suit le sens d'écriture du document).
+                    </p>
+                    <div class="image-container">
+                        <img src="./assets/images/image-flex-box.png" alt="Image de Flexbox">
+                    </div>
+                    <p>
+                        Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.
+                    </p>
+                    <div class="image-container">
+                        <img src="./assets/images/image-flex-box-2.png" alt="Image de Flexbox">
+                    </div>
+                </div>
+                <div class="flex-axe-2">
+                    <h4>
+                        L'axe secondaire (cross axis)
+                    </h4>
+                    <p>
+                        L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.
+                    </p>
+                    <div class="image-container">
+                        <img src="./assets/images/image-flex-box-3.png" alt="Image de Flexbox">
+                    </div>
+                    <p>
+                        Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales).
+                    </p>
+                    <div class="image-container">
+                        <img src="./assets/images/image-flex-box-4.png" alt="Image de Flexbox">
+                    </div>
+                    <p>
+                        Comprendre les liens entre les différents axes est crucial lorsqu'on commence à aligner/justifier des éléments flexibles sur un axe ou l'autre grâce aux fonctionnalités et propriétés des boîtes flexibles.
+                    </p>
+                </div>
             </div>
-            <p>
-                Si on choisit la valeur column ou column-reverse, l'axe principal suivra la direction de bloc (block direction) et progressera le long de l'axe perpendiculaire au sens d'écriture.
-            </p>
-            <div class="image-container">
-                <img src="./assets/images/image-flex-box-2.png" alt="">
-            </div>
-            <h4>
-                L'axe secondaire (cross axis)
-            </h4>
-            <p>
-                L'axe secondaire est perpendiculaire à l'axe principal. Ainsi, si flex-direction vaut row ou row-reverse, l'axe secondaire suivra l'axe des colonnes.
-            </p>
-                <div class="image-container">
-            <img src="./assets/images/image-flex-box-3.png" alt="">
-        </div>
-            <p>
-                Si l'axe principale est column ou column-reverse, l'axe secondaire suivra celui des lignes (horizontales).
-            </p>
-            <div class="image-container">
-                <img src="./assets/images/image-flex-box-4.png" alt="">
-            </div>
-            <p>
-                Comprendre les liens entre les différents axes est crucial lorsqu'on commence à aligner/justifier des éléments flexibles sur un axe ou l'autre grâce aux fonctionnalités et propriétés des boîtes flexibles.
-            </p>
         </div>
     </section>
     <section id="grid">
