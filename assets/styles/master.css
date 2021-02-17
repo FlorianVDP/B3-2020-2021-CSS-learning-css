@@ -218,6 +218,13 @@ section#heading{
     margin-left: auto;
 }
 @media screen and (max-width: 767px){
+    .profil-mode{
+        max-width: 100%;
+        margin-right: initial;
+        margin-left: initial;
+    }
+}
+@media screen and (max-width: 767px){
     #description{
         max-width: initial;
         margin-top: 8em;

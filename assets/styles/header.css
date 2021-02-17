@@ -44,7 +44,7 @@ header nav ul.menu-principal{
         top: 0;
         right: 0;
         height: calc(100vh - 10em);
-        z-index: 1;
+        z-index: 100;
         padding: 10em 0 0 0;
         width: 0%;
         transition: var(--trans-300);
@@ -209,12 +209,13 @@ header nav label.menu-burger-label{
     position: relative;
     cursor: pointer;
     float: right;
-    z-index: 100;
+    z-index: 999;
     display: none;
 }
 @media screen and (max-width: 900px){
     header nav label.menu-burger-label{
         display: block;
+        z-index: 999;
     }
 }
 header nav label.menu-burger-label span{
@@ -225,6 +226,7 @@ header nav label.menu-burger-label span{
     position: absolute;
     border-radius: 100px;
     border: 1px solid var(--blanc);
+    z-index: 999;
 }
 header nav label.menu-burger-label span:nth-of-type(1){
     top: 0;
