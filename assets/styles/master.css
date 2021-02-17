@@ -235,6 +235,19 @@ section#slider {
     overflow: hidden;
     background-color: var(--main-color);
 }
+section#slider .wrapper-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+section#slider .wrapper-section h1{
+    color: var(--blanc);
+    font-size: 4em;
+}
+section#slider .wrapper-section h1::after{
+    background-color: var(--blanc);
+}
 #flex{
 
 }
